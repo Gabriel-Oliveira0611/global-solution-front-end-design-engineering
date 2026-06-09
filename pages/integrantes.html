@@ -4,18 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Integrantes | Aeris Mars</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+    <script src="../assets/js/app.js" defer></script>
+    <script src="../assets/js/integrantes.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Aeris Mars</h1>
-      <nav>
-        <a href="../index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="monitoramento.html">Monitoramento</a>
-        <a href="emergencias.html">Emergências</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contato.html">Contato</a>
-        <a href="integrantes.html">Integrantes</a>
+    <header class="header">
+      <a
+        class="brand"
+        href="../index.html"
+        aria-label="Página inicial Aeris Mars"
+      >
+        <img src="../assets/images/logo-aeris-mars.svg" alt="Logo Aeris Mars" />
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Menu principal">
+        <a class="nav-link" href="../index.html">Início</a>
+        <a class="nav-link" href="sobre.html">Sobre</a>
+        <a class="nav-link" href="monitoramento.html">Monitoramento</a>
+        <a class="nav-link" href="emergencias.html">Emergências</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="nav-link" href="contato.html">Contato</a>
+        <a class="nav-link active" href="integrantes.html">Integrantes</a>
       </nav>
     </header>
 
@@ -24,7 +46,9 @@
         <span class="kicker">Equipe</span>
         <h1 class="title">Integrantes do projeto</h1>
         <p class="subtitle">
-          Equipe responsável pelo projeto Aeris Mars / MSTMC.
+          Equipe responsável pelo projeto Aeris Mars / MSTMC. Os links de GitHub
+          e LinkedIn devem ser preenchidos com os perfis reais de cada
+          integrante antes da entrega.
         </p>
       </section>
 
@@ -39,17 +63,18 @@
               href="https://github.com/Gabriel-Oliveira0611"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub de Gabriel Pereira de Oliveira"
               >GitHub</a
             >
             <a
               href="https://www.linkedin.com/in/gabriel-pereira-1aa4bb224/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn de Gabriel Pereira de Oliveira"
               >LinkedIn</a
             >
           </div>
         </article>
-
         <article class="member-card card">
           <div class="avatar" aria-hidden="true">MSL</div>
           <h2>Murillo Siviero Lopes</h2>
@@ -60,20 +85,21 @@
               href="https://github.com/MurilloSLopes"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub de Murillo Siviero Lopes"
               >GitHub</a
             >
             <a
               href="https://www.linkedin.com/in/murillo-llopes-23out99/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn de Murillo Siviero Lopes"
               >LinkedIn</a
             >
           </div>
         </article>
-
         <article class="member-card card">
-          <div class="avatar" aria-hidden="true">MSL</div>
-          <h2>Pedro Henrique Carvalho Do Nascimento</h2>
+          <div class="avatar" aria-hidden="true">PHC</div>
+          <h2>Pedro Henrique Carvalho do Nascimento</h2>
           <p><strong>RM:</strong> 570492</p>
           <p><strong>Turma:</strong> 1TDSPW</p>
           <div class="member-links">
@@ -81,19 +107,20 @@
               href="https://github.com/pedrohcnascimento"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub de Pedro Henrique Carvalho do Nascimento"
               >GitHub</a
             >
             <a
               href="https://www.linkedin.com/in/pedrohenriquecn07/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn de Pedro Henrique Carvalho do Nascimento"
               >LinkedIn</a
             >
           </div>
         </article>
-
         <article class="member-card card">
-          <div class="avatar" aria-hidden="true">MSL</div>
+          <div class="avatar" aria-hidden="true">AMN</div>
           <h2>Adalto Massahiro Nagabe</h2>
           <p><strong>RM:</strong> 572298</p>
           <p><strong>Turma:</strong> 1TDSPW</p>
@@ -102,19 +129,20 @@
               href="https://github.com/AdaltoNagabe"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub de Adalto Massahiro Nagabe"
               >GitHub</a
             >
             <a
               href="https://www.linkedin.com/in/adalto-massashiro-nagabe-149685104/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn de Adalto Massahiro Nagabe"
               >LinkedIn</a
             >
           </div>
         </article>
-
         <article class="member-card card">
-          <div class="avatar" aria-hidden="true">MSL</div>
+          <div class="avatar" aria-hidden="true">MGS</div>
           <h2>Murilo Gomes Santiago Carnaval</h2>
           <p><strong>RM:</strong> 573067</p>
           <p><strong>Turma:</strong> 1TDSPW</p>
@@ -123,12 +151,14 @@
               href="https://github.com/murilossanttiago"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub de Murilo Gomes Santiago Carnaval"
               >GitHub</a
             >
             <a
               href="https://www.linkedin.com/in/murilo-gomes-santiago/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn de Murilo Gomes Santiago Carnaval"
               >LinkedIn</a
             >
           </div>
@@ -136,7 +166,8 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <p>© 2078 Aeris Mars • MSTMC</p>
       <p>Projeto acadêmico FIAP - Global Solution 2026/1</p>
     </footer>
   </body>
