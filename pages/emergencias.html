@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergências | Aeris Mars</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <script src="../assets/js/app.js" defer></script>
+    <script src="../assets/js/emergencias.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="../index.html" aria-label="Página inicial Aeris Mars">
+            <img src="../assets/images/logo-aeris-mars.svg" alt="Logo Aeris Mars">
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <nav class="nav" id="main-nav" aria-label="Menu principal">
+            <a class="nav-link " href="../index.html">Início</a>
+            <a class="nav-link " href="sobre.html">Sobre</a>
+            <a class="nav-link " href="monitoramento.html">Monitoramento</a>
+            <a class="nav-link active" href="emergencias.html">Emergências</a>
+            <a class="nav-link " href="faq.html">FAQ</a>
+            <a class="nav-link " href="contato.html">Contato</a>
+            <a class="nav-link " href="integrantes.html">Integrantes</a>
+        </nav>
+    
+    </header>
+
+    <main>
+
+        <section class="section">
+            <span class="kicker">Resposta crítica</span>
+            <h1 class="title">Protocolos de emergência</h1>
+            <p class="subtitle">
+                Área dedicada aos alertas e ações rápidas do MSTMC em situações de risco.
+            </p>
+        </section>
+
+        <section class="section grid grid-3">
+            <article class="card alert-card">
+                <div class="card-icon">🌪️</div>
+                <h2>Tempestade de poeira</h2>
+                <p>Redirecionar rotas próximas e reduzir velocidade de aeronaves autônomas.</p>
+            </article>
+
+            <article class="card alert-card">
+                <div class="card-icon">📡</div>
+                <h2>Falha de sinal</h2>
+                <p>Acionar canal reserva e registrar perda temporária de telemetria.</p>
+            </article>
+
+            <article class="card alert-card">
+                <div class="card-icon">🚁</div>
+                <h2>Missão em risco</h2>
+                <p>Priorizar pouso seguro e notificar bases próximas para suporte.</p>
+            </article>
+        </section>
+
+        <section class="section card">
+            <h2>Simulação de protocolo</h2>
+            <p>Clique no botão para abrir um modal com uma ação emergencial sugerida.</p>
+            <button class="btn" id="open-modal">Abrir protocolo</button>
+        </section>
+
+        <div class="modal" id="protocol-modal" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" id="close-modal" aria-label="Fechar modal">×</button>
+                <h2>Protocolo sugerido</h2>
+                <p>
+                    Rota alternativa ativada. A missão deve reduzir altitude, aguardar nova leitura
+                    climática e seguir para o corredor seguro mais próximo.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2078 Aeris Mars • MSTMC</p>
+        <p>Projeto acadêmico FIAP - Global Solution 2026/1</p>
+    </footer>
+</body>
+</html>
