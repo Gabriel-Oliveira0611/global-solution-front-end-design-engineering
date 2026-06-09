@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Aeris Mars</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <script src="../assets/js/app.js" defer></script>
+    <script src="../assets/js/contato.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="../index.html" aria-label="Página inicial Aeris Mars">
+            <img src="../assets/images/logo-aeris-mars.svg" alt="Logo Aeris Mars">
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <nav class="nav" id="main-nav" aria-label="Menu principal">
+            <a class="nav-link " href="../index.html">Início</a>
+            <a class="nav-link " href="sobre.html">Sobre</a>
+            <a class="nav-link " href="monitoramento.html">Monitoramento</a>
+            <a class="nav-link " href="emergencias.html">Emergências</a>
+            <a class="nav-link " href="faq.html">FAQ</a>
+            <a class="nav-link active" href="contato.html">Contato</a>
+            <a class="nav-link " href="integrantes.html">Integrantes</a>
+        </nav>
+    
+    </header>
+
+    <main>
+
+        <section class="section">
+            <span class="kicker">Contato</span>
+            <h1 class="title">Envie uma mensagem para a Aeris Mars</h1>
+            <p class="subtitle">
+                Formulário funcional com validação em JavaScript, como exigido no trabalho.
+            </p>
+        </section>
+
+        <section class="section">
+            <form class="contact-form card" id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" aria-invalid="false" aria-describedby="name-error">
+                    <small class="error-message" id="name-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" aria-invalid="false" aria-describedby="email-error">
+                    <small class="error-message" id="email-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" aria-invalid="false" aria-describedby="message-error"></textarea>
+                    <small class="error-message" id="message-error"></small>
+                </div>
+
+                <button class="btn" type="submit">Enviar mensagem</button>
+                <p class="success-message" id="success-message"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2078 Aeris Mars • MSTMC</p>
+        <p>Projeto acadêmico FIAP - Global Solution 2026/1</p>
+    </footer>
+</body>
+</html>
