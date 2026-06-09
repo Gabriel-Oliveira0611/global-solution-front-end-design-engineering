@@ -1,0 +1,41 @@
+.contact-form {
+    max-width: 720px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+}
+
+.form-group {
+    display: grid;
+    gap: 8px;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--bg-section);
+    color: var(--text-main);
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary);
+}
+
+.error-message {
+    color: var(--danger);
+    min-height: 18px;
+}
+
+.success-message {
+    color: var(--success);
+    font-weight: 700;
+}
