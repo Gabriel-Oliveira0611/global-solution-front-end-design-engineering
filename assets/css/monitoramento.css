@@ -1,0 +1,52 @@
+.metric-card {
+    text-align: center;
+}
+
+.metric-card p {
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.metric-card strong {
+    font-size: 2.6rem;
+    color: var(--primary);
+}
+
+.status-list {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.status-list li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--text-muted);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.success {
+    background: var(--success);
+}
+
+.warning {
+    background: var(--secondary);
+}
+
+.danger {
+    background: var(--danger);
+}
+
+.last-update {
+    margin-top: 14px;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+}

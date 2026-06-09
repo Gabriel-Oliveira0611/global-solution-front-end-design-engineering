@@ -1,0 +1,43 @@
+.section .title {
+    max-width: 940px;
+}
+
+.card h2 {
+    color: var(--text-main);
+}
+
+.selected-card {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tab-button {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.tab-button.active {
+    color: #07101C;
+    background: var(--primary);
+}
+
+.tab-content {
+    display: none;
+    color: var(--text-muted);
+}
+
+.tab-content.active {
+    display: block;
+}
