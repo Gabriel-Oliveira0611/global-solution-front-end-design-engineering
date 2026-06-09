@@ -4,18 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre | Aeris Mars</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+    <script src="../assets/js/app.js" defer></script>
+    <script src="../assets/js/sobre.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Aeris Mars</h1>
-      <nav>
-        <a href="../index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="monitoramento.html">Monitoramento</a>
-        <a href="emergencias.html">Emergências</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contato.html">Contato</a>
-        <a href="integrantes.html">Integrantes</a>
+    <header class="header">
+      <a
+        class="brand"
+        href="../index.html"
+        aria-label="Página inicial Aeris Mars"
+      >
+        <img src="../assets/images/logo-aeris-mars.svg" alt="Logo Aeris Mars" />
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Menu principal">
+        <a class="nav-link" href="../index.html">Início</a>
+        <a class="nav-link active" href="sobre.html">Sobre</a>
+        <a class="nav-link" href="monitoramento.html">Monitoramento</a>
+        <a class="nav-link" href="emergencias.html">Emergências</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="nav-link" href="contato.html">Contato</a>
+        <a class="nav-link" href="integrantes.html">Integrantes</a>
       </nav>
     </header>
 
@@ -34,24 +56,95 @@
 
       <section class="section grid grid-2">
         <article class="card">
+          <div class="card-icon">❗</div>
           <h2>Problema</h2>
           <p>
             Em Marte, aeronaves, drones e veículos de missão precisam operar em
-            um ambiente instável.
+            um ambiente instável, com tempestades de poeira, baixa visibilidade
+            e rotas de risco.
           </p>
         </article>
 
         <article class="card">
+          <div class="card-icon">✅</div>
           <h2>Solução</h2>
           <p>
-            A Aeris Mars propõe uma interface para simular controle de tráfego,
-            clima e emergências.
+            A Aeris Mars propõe uma interface simples para simular o controle de
+            tráfego, a leitura de alertas climáticos e a consulta de protocolos
+            emergenciais.
           </p>
         </article>
       </section>
+
+      <section class="section card">
+        <h2>Objetivos do site</h2>
+        <ul class="list">
+          <li>Apresentar o conceito da solução MSTMC.</li>
+          <li>Simular dados básicos de tráfego e clima.</li>
+          <li>Oferecer navegação simples entre páginas do projeto.</li>
+          <li>Aplicar HTML semântico, CSS responsivo e JavaScript básico.</li>
+        </ul>
+      </section>
+
+      <section class="section card">
+        <span class="kicker">Detalhes da solução</span>
+        <h2>Como o MSTMC ajuda a operação</h2>
+
+        <div class="tabs" role="tablist" aria-label="Detalhes do projeto">
+          <button
+            class="tab-button active"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            data-tab="tab-problema"
+          >
+            Problema
+          </button>
+          <button
+            class="tab-button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-tab="tab-solucao"
+          >
+            Solução
+          </button>
+          <button
+            class="tab-button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-tab="tab-impacto"
+          >
+            Impacto
+          </button>
+        </div>
+
+        <div class="tab-content active" id="tab-problema" role="tabpanel">
+          <p>
+            Operações aéreas marcianas precisam lidar com clima extremo, baixa
+            visibilidade e rotas críticas.
+          </p>
+        </div>
+
+        <div class="tab-content" id="tab-solucao" role="tabpanel">
+          <p>
+            O sistema centraliza indicadores de tráfego, clima e emergência em
+            uma interface simples.
+          </p>
+        </div>
+
+        <div class="tab-content" id="tab-impacto" role="tabpanel">
+          <p>
+            A proposta reduz riscos operacionais e melhora a tomada de decisão
+            em missões simuladas.
+          </p>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <p>© 2078 Aeris Mars • MSTMC</p>
       <p>Projeto acadêmico FIAP - Global Solution 2026/1</p>
     </footer>
   </body>
