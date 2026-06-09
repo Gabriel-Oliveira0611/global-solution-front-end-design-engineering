@@ -1,20 +1,36 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aeris Mars | Início</title>
-  </head>
-  <body>
-    <header>
-      <h1>Aeris Mars</h1>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="pages/sobre.html">Sobre</a>
-        <a href="pages/faq.html">FAQ</a>
-        <a href="pages/integrantes.html">Integrantes</a>
-      </nav>
-    </header>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | Aeris Mars</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+</head>
+
+<header class="header">
+    <a class="brand" href="index.html" aria-label="Página inicial Aeris Mars">
+        <img src="assets/images/logo-aeris-mars.svg" alt="Logo Aeris Mars">
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Menu principal">
+        <a class="nav-link active" href="index.html">Início</a>
+        <a class="nav-link" href="pages/sobre.html">Sobre</a>
+        <a class="nav-link" href="pages/monitoramento.html">Monitoramento</a>
+        <a class="nav-link" href="pages/emergencias.html">Emergências</a>
+        <a class="nav-link" href="pages/faq.html">FAQ</a>
+        <a class="nav-link" href="pages/contato.html">Contato</a>
+        <a class="nav-link" href="pages/integrantes.html">Integrantes</a>
+    </nav>
+</header>
 
     <main>
       <section class="hero section">
