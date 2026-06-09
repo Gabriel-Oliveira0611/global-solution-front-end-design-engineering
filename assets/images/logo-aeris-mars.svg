@@ -1,0 +1,8 @@
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="220" height="64" rx="14" fill="#080B12"/>
+<circle cx="31" cy="32" r="16" fill="#FF6B35" opacity="0.18"/>
+<path d="M25 39L31 16L37 39L31 35L25 39Z" fill="#FF6B35"/>
+<path d="M45 47C69 20 96 15 121 25C145 34 158 52 183 34" stroke="#2AD4FF" stroke-width="2" stroke-linecap="round"/>
+<text x="58" y="30" fill="#F4F7FB" font-family="Arial, sans-serif" font-size="18" font-weight="700">AERIS</text>
+<text x="58" y="48" fill="#2AD4FF" font-family="Arial, sans-serif" font-size="14" font-weight="700">MARS</text>
+</svg>
